@@ -4,10 +4,7 @@ import './Spinner.css';
 export default function Spinner({load}) {
   return (
     <div className="spinner-container d-flex justify-content-center align-items-center flex-column">
-      <div className="lds-spinner">
-        {[...Array(12)].map((_, i) => (
-          <div key={i}></div>
-        ))}
+      <div className="loader">
       </div>
           <p className='fs-5 text-warning mt-1'>{`${load}`}</p>
     </div>
