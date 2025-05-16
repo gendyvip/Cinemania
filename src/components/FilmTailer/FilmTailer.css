@@ -1,0 +1,155 @@
+
+
+.tailer{
+    margin-top: 55px;
+    display: flex;
+    align-items: start;
+    margin-bottom: 50px;
+}
+
+.tailer-video{
+    flex: 4;
+    height: 450px;
+    position: relative;
+}
+.video-rection{
+    padding: 5px 0px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.video-rection button{
+    background: none;
+    color: white;
+    padding: 3px 12px;
+    border: none;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    font-size: 14px;
+}
+
+.video-rection button:hover{
+    background-color: rgb(44, 44, 44);
+}
+.video-rection button i:hover{
+    color: white;
+}
+
+.video-rection .imoje {
+    border: 1px solid rgb(75, 75, 75);
+}
+
+.tailer-info{
+    flex: 2;
+    height: 450px;
+    background-color: #121212;
+    color: white;
+    padding: 25px;
+}
+.tailer-info .info1{
+    display: flex;
+    gap: 20px;
+    align-items: start;
+}
+.tailer-info .info1 .more{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+.tailer-info .info1 .more .more1 h1{
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.tailer-info .info1 .more .more1 p{
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.tailer-info .info1 .more button{
+    background: none;
+    color: white;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: none;
+    font-size: 20px;
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.tailer-info .info1 .more button:hover{
+    background-color: rgb(34, 34, 34);
+}
+
+.tailer-info .info1 .more button i:hover{
+    color: white;
+}
+
+.tailer-info .info2 h1{
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.tailer-info .info2 p{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 18px;
+}
+
+
+@media (max-width: 1100px){
+    .tailer{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 500px){
+
+    .video-rection{
+        gap: 7px;
+    }
+    .video-rection button{
+        padding: 3px 7px;
+        font-size: 12px;
+    }
+
+    .tailer-info{
+        padding: 15px;
+    }
+    .tailer-info .info1{
+        gap: 10px;
+    }
+    .tailer-info .info1 img{
+        width: 70px;
+        height: 100px;
+    }
+    .tailer-info .info1 .more .more1 h1{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .tailer-info .info1 .more .more1 p{
+        font-size: 11px;
+        font-weight: 600;
+    }
+}

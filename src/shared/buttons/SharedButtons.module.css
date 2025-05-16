@@ -1,0 +1,28 @@
+.genre-pill {
+    padding: 6px 14px;
+    border-radius: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    background-color: rgba(255, 255, 255, 0.05);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    display: inline-block;
+  }
+  
+  .genre-pill:hover {
+    background-color: var(--cinemania-extended-gray);
+    color: #fff;
+  }
+  
+  @media (max-width: 576px) {
+    .genre-pill {
+      font-size: 0.8rem;
+      padding: 5px 12px;
+    }
+  }
+  

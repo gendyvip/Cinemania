@@ -1,0 +1,9 @@
+ .i:hover{
+    color: var(--cinemania-yellow);
+    cursor: pointer;
+  }
+  
+  .sectionSubtitle {
+    color: var(--cinemania-light-gray);
+  }
+  

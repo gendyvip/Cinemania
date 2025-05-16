@@ -1,0 +1,431 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', Arial, sans-serif;
+  }
+
+  .navbar-container {
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    background-color: #121212;
+    top: 0px;
+    z-index: 1000;
+  }
+
+  .navbar-container1 {
+    position: fixed;
+    width: 100%;
+    font-family: 'Roboto', Arial, sans-serif;
+    top: 48px;
+    z-index: 990;
+  }
+  
+  .navbar {
+    display: flex;
+    align-items: center;
+    justify-content: left !important;
+    color: white;
+    padding: 0.5rem 1rem;
+    height: 56px;
+    gap: 25px;
+  }
+  
+  .navbar-logo {
+    /* margin-right: 1rem; */
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+  
+  .CineMania-logo {
+    background-color: var(--cinemania-yellow);
+    color: black;
+    font-weight: bold;
+    padding: 0rem 0.4rem;
+    border-radius: 4px;
+    font-size: 1.2rem;
+  }
+  
+  .menu-button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    /* margin-right: 1rem; */
+  }
+  
+  .menu-icon {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 14px;
+    width: 18px;
+    margin-right: 0.5rem;
+  }
+  
+  .menu-icon span {
+    height: 2px;
+    width: 100%;
+    background-color: white;
+  }
+  
+  .menu-text {
+    display: none;
+    font-size: 16px;
+  }
+  
+  @media (min-width: 640px) {
+    .menu-text {
+      display: inline;
+    }
+  }
+  
+  .search-container {
+    display: flex;
+    flex: 1.2;
+    max-width: 600px;
+}
+
+  .search-container1 {
+    display: flex;
+    flex: 1.2;
+    max-width: 600px;
+    border-radius: 4px;
+    max-height: 70vh;
+    overflow: auto;
+    flex-direction: column;
+    background-color: #121212;
+    padding: 10px 15px;
+    gap: 15px;
+  }
+
+.search-container1::-webkit-scrollbar {
+    width: 8px;
+}
+
+.search-container1::-webkit-scrollbar-track {
+    background: #1e1e1e;
+}
+
+.search-container1::-webkit-scrollbar-thumb {
+    background: #444;
+    border-radius: 4px;
+}
+
+.search-container1::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+  .seacrh-drop{
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+
+  .seacrh-drop:hover{
+    background-color: #ededed !important;
+  }
+
+  .seacrh-drop-out:hover{
+    background-color: #363636;
+  }
+  .seacrh-drop-out:hover .search-icon-out{
+    color: white;
+  } 
+
+  .search-icon-out{
+    margin-right: 13px;
+    color: #949494;
+    font-weight: bold;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+}
+  
+  .search-category {
+    background-color: white;
+    border-right: 1px solid #bdbdbd;
+    width: 100px;
+  }
+  
+  
+  .search-input {
+    flex: 1;
+    position: relative;
+  }
+  
+  .search-input input {
+    width: 100%;
+    height: 100%;
+    padding: 0 2rem 0 0.5rem;
+    border: none;
+    outline: none;
+    font-size: 0.875rem;
+    border-left: 1px solid #949494;
+    border-bottom-right-radius: 6px;
+    border-top-right-radius: 6px;
+  }
+  
+  .search-button {
+    position: absolute;
+    right: 5px;
+    top: 0;
+    height: 100%;
+    width: 2rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .search-icon {
+    font-style: normal;
+    font-size: 1rem;
+  }
+  
+  .menu-items{
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+  }
+  .menu-items span{
+    font-size: 15px;
+    text-transform: capitalize;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    padding: 5px 17px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    border: 1px solid #363636;
+}
+
+.menu-items span i{
+    margin-right: 5px;
+    transition: all .8s ease;
+    -webkit-transition: all .8s ease;
+    -moz-transition: all .8s ease;
+    -ms-transition: all .8s ease;
+    -o-transition: all .8s ease;
+}
+.menu-items span:hover{
+  background-color: #363636;
+  color: var(--cinemania-yellow);
+}
+
+@media (max-width: 1220px){
+  .menu-items{
+    display: none;
+  }
+  .search-container{
+    max-width: 1000px;
+  }
+    .search-container1{
+    max-width: 1500px;
+    flex: 1;
+  }
+}
+
+@media (max-width: 500px){
+  .search-button {
+    display: none;
+  }
+  .navbar{
+    gap: 5px;
+  }
+  .menu-button{
+    margin-right: 10px;
+  }
+  .navbar-logo img{
+    width: 140px;
+    height: 40px;
+    object-fit: contain;
+  }
+}
+
+
+
+  
+  .mobile-menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 1000;
+    color: white;
+  }
+  
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #1f1f1f;
+    z-index: 1001;
+    overflow-y: auto;
+  }
+  .mobile-menu 
+  
+  .mobile-menu-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+  }
+  
+  .close-button {
+    background: none;
+    border: none;
+    color: #999;
+    font-size: 1.25rem;
+    cursor: pointer;
+  }
+  
+  .close-button:hover {
+    color: white;
+  }
+  
+  .mobile-menu-items {
+    list-style: none;
+  }
+  
+  .mobile-menu-items li {
+    padding: 1rem;
+    border-bottom: 1px solid #333;
+    cursor: pointer;
+    transform: all .3s ease;
+    -webkit-transform: all .3s ease;
+    -moz-transform: all .3s ease;
+    -ms-transform: all .3s ease;
+    -o-transform: all .3s ease;
+}
+.mobile-menu-items li i{
+  transition: all .8s ease;
+  -webkit-transition: all .8s ease;
+  -moz-transition: all .8s ease;
+  -ms-transition: all .8s ease;
+  -o-transition: all .8s ease;
+}
+  
+  .mobile-menu-items li:hover {
+    background-color: #333;
+    color: var(--cinemania-yellow);
+    transform: translate(-5px);
+    -webkit-transform: translate(-5px);
+    -moz-transform: translate(-5px);
+    -ms-transform: translate(-5px);
+    -o-transform: translate(-5px);
+}
+  
+  .divider {
+    height: 1px;
+    background-color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .CineMania-pro, .watchlist, .sign-in {
+      display: none;
+    }
+    .search-container{
+      margin-left: 0px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .search-category select {
+      padding: 0 0.25rem;
+      font-size: 0.75rem;
+    }
+    
+    .search-input input {
+      padding: 0 1.5rem 0 0.25rem;
+      font-size: 0.75rem;
+    }
+  }
+
+
+  /* ===============================================nav2 */
+
+
+  .search-output{
+    display: flex;
+    align-items: start;
+    gap: 17px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.194);
+    transition: all .3s ease;
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    cursor: pointer;
+}
+  .search-output:hover{
+    background-color: #1a1a1a;
+    padding: 8px;
+  }
+
+  .search-output img{
+    width: 50px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+  .search-output .out1 h5{
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: rgba(255, 255, 255, 0.953);
+  }
+
+    .search-output .out1 p{
+    font-size: 16px;
+    font-weight: 500;
+    color: #999;
+    line-height: 10px;
+  }
+
+  @media  (max-width: 992px){
+    .search-container1{
+      width: 100%;
+      margin-left: 0;
+    }
+    .menu-button1{
+      display: none;
+    }
+    .navbar-logo1{
+      display: none;
+    }
+  }

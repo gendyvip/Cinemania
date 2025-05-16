@@ -1,0 +1,11 @@
+  .btnDetails {
+      background-color: var(--cinemania-medium-gray) !important;
+      color: var(--cinemania-extended-gray) !important;
+      border-radius: 10px 50px 50px 10px !important;
+  }
+
+  .btnDetails:hover {
+      color: var(--cinemania-yellow) !important;
+      border-color: var(--cinemania-yellow) !important;
+
+  }

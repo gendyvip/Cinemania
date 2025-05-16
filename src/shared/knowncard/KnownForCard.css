@@ -1,0 +1,85 @@
+
+.card-know{
+    height: 420px;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    flex-grow: 1;
+}
+
+.card-know img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+    object-fit: cover;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    transition: all .4s ease;
+    -webkit-transition: all .4s ease;
+    -moz-transition: all .4s ease;
+    -ms-transition: all .4s ease;
+    -o-transition: all .4s ease;
+}
+
+.card-know-info{
+    position: absolute;
+    left: 15px;
+    bottom: 0px;
+    width: 100%;
+    cursor: pointer;
+}
+.card-know-info span{
+    font-size: 27px;
+}
+.card-know-info h5{
+    line-height: 15px;
+    color: var( --cinemania-yellow);
+    font-weight: 700;
+}
+.card-know-info div{
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: 600;
+    margin-top: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 90%;
+}
+.card-know-info p{
+    color: rgba(255, 255, 255, 0.668);
+    font-size: 17px;
+    line-height: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.icon-card-know{
+    position: absolute;
+    top: 15px;
+    right: 20px;
+}
+
+.card-know:hover img{
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    filter: grayscale(0);
+    -webkit-filter: grayscale(0);
+    cursor: pointer;
+}
+
+.card-know:hover{
+    box-shadow: 0px 0px 10px 2px #F5C518;
+}

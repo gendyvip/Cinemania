@@ -1,0 +1,28 @@
+h1 {
+  font-size: 2.5rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.text-muted {
+  color: var(--cinemania-light-gray) !important;
+  font-size: 1.1rem;
+}
+
+.whatToWatch {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  flex-wrap: wrap !important;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2rem;
+  }
+
+  .text-muted {
+    font-size: 1rem;
+  }
+}

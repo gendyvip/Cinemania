@@ -1,0 +1,13 @@
+
+  @media (min-width: 980px) and (max-width:1439px) {
+    .col-ml{
+        flex: 0 0 auto;
+        width: 25% !important; 
+    }
+  }
+  
+  .card-title-hover:hover{
+    .chev-right{
+      color: var(--cinemania-yellow);
+     }
+  }

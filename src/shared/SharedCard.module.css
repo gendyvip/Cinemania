@@ -1,0 +1,42 @@
+.card {
+    max-width: 270px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin:20px 7px;
+    border-radius: 0px 20px 20px 20px !important;
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+  }
+  .cardHeader {
+    border-top-right-radius: 20px !important;
+  }
+  
+  .rating {
+    font-size: 1.2rem;
+    color: var(--cinemania-yellow);
+  }
+  .cardImage{
+    width: 100%;
+    height: 300px;
+    border-top-right-radius: 20px;
+    object-fit: cover;
+  }
+  .btnDetails{
+   background-color: var(--cinemania-medium-gray) !important;
+   color:var(--cinemania-extended-gray)!important;
+   border-radius: 10px 50px 50px 10px !important;
+  }
+  .btnDetails:hover{
+    color: var(--cinemania-yellow) !important;
+    border-color: var(--cinemania-yellow) !important;
+
+  }
+  .btnTrailer{
+    border-color: var(--cinemania-medium-gray) !important;
+    color: var(--cinemania-light) !important;
+    border-radius: 50px 10px 10px 50px  !important;
+  }
+  .btnTrailer:hover{
+    border-color: var(--cinemania-light) !important;
+    
+  }
+  

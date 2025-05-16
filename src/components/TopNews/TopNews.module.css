@@ -1,0 +1,22 @@
+.newsImage {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.categoryBtn {
+  border-radius: 20px;
+  font-size: 0.8rem;
+  margin: 0.2rem;
+  padding: 5px 15px;
+}
+
+.categoryBtn:hover {
+  background-color: var(--cinemania-dark-gray) !important;
+  color: var(--cinemania-white) !important;
+}
+
+.section {
+  background-color: var(--cinemania-black);
+  border-radius: 8px;
+}

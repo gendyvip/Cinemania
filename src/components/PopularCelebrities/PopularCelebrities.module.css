@@ -1,0 +1,72 @@
+.container {
+  background-color: var(--cinemania-black);
+  color: var(--cinemania-white);
+  padding: 3rem 3rem;
+}
+
+.tabContainer {
+  display: flex;
+  margin-bottom: 0.2rem;
+}
+
+.tabContainer p {
+  margin-right: 9rem;
+  color: var(--cinemania-yellow);
+}
+
+.activeTab {
+  font-weight: bold;
+  border-bottom: 2px solid var(--cinemania-yellow);
+}
+
+.imageContainer {
+  position: relative;
+  width: 100%;
+  padding-top: 100%;
+  margin-bottom: 8px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.celebrityImage {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.celebritySlide {
+  text-align: center;
+  transition: all .3s ease;
+}
+
+.celebritySlide:hover {
+  opacity: .8;
+}
+
+.rankContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4px;
+  margin-bottom: 4px;
+}
+
+.rank {
+  font-weight: bold;
+}
+
+.change {
+  font-size: 12px;
+  color: var(--cinemania-light-gray);
+}
+
+.name {
+  font-size: 14px;
+  font-weight: 500;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
