@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from "react";
-import "./NavBar.css";
+import "./Navbar.css";
 import { Container } from "react-bootstrap";
 import { Link, useNavigate } from "react-router-dom";
 import { getAllMovies } from "../../API/movieAPI";
