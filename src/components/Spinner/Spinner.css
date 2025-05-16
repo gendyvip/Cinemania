@@ -24,7 +24,7 @@
           animation: 1s spin linear infinite;
         }
         .loader:after {
-          color: #FF3D00;
+          color: var(--cinemania-yellow);
           transform: rotateY(70deg);
           animation-delay: .4s;
         }
