@@ -30,9 +30,9 @@ export default function FanFavoritesDetails() {
 
   if (isLoading) {
     return (
-      <Container className="py-5 mt-5 d-flex justify-content-center align-items-center" style={{ minHeight: "50vh" }}>
+      
         <Spinner load="Loading Favorites..." />
-      </Container>
+    
     );
   }
 
