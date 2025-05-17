@@ -31,9 +31,9 @@ export default function WhatToWatchDetails() {
 
   if (isLoading) {
     return (
-      <Container className="py-5 mt-5 d-flex justify-content-center align-items-center" style={{ minHeight: "50vh" }}>
+    
         <Spinner load="Loading Top Picks..." />
-      </Container>
+      
     );
   }
 
